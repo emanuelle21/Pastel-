@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convite Especial 💖</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+</head>
+<body>
+  <!-- Fundo -->
+  <div id="background"></div>
+
+  <!-- Card 1: Zipper -->
+  <section id="intro-card" class="card">
+    <div class="zipper" id="zipper">
+      <div class="cord"></div>
+      <div class="tag"></div>
+    </div>
+    <p class="hint">Oi! Puxe a cordinha ❤️</p>
+  </section>
+
+  <!-- Card 2: Pergunta -->
+  <section id="question-card" class="card hidden">
+    <h2>Quer comer um pastel comigo? 🥺</h2>
+    <img src="Gato Apaixonado GIF - Gato Apaixonado - Descobrir e Compartilhar GIFs.gif" alt="gato fofo">
+    <div class="buttons">
+      <button id="yesBtn" class="yes">Sim</button>
+      <button id="noBtn" class="no">Não</button>
+    </div>
+  </section>
+
+  <!-- Card 3: Obrigado -->
+  <section id="thanks-card" class="card hidden">
+    <h2>Obrigada! 🥰</h2>
+    <p>Eu sabia que você aceitaria, meu amor!</p>
+    <img src="Aq.gif" alt="Gatinho feliz">
+  </section>
+
+  <canvas id="confetti-canvas" class="hidden"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>

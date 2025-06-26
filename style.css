@@ -1,0 +1,92 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  font-family:'Segoe UI',sans-serif;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+  overflow:hidden;
+}
+#background{
+  position:fixed;
+  inset:0;
+  background:url('textura-de-fundo-aquarela-rosa_199112-119.avif') center/cover no-repeat;
+  opacity:0.2;
+  z-index:-2;
+}
+.card{
+  background:rgba(255,255,255,0.8);
+  backdrop-filter:blur(10px);
+  border-radius:16px;
+  padding:30px 40px;
+  text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+  max-width:320px;
+}
+.hidden{
+  display:none;
+}
+#intro-card .zipper{
+  position:relative;
+  width:30px;
+  height:220px;
+  margin:0 auto;
+}
+.cord{
+  width:4px;
+  height:200px;
+  background:#d6336c;
+  margin:0 auto;
+}
+.tag{
+  width:28px;
+  height:28px;
+  background:#d6336c;
+  border-radius:4px;
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+  cursor:pointer;
+}
+.hint{
+  margin-top:14px;
+  font-size:1.1em;
+  color:#d6336c;
+}
+#question-card img,
+#thanks-card img{
+  width:200px;
+  margin:16px 0;
+  border-radius:8px;
+}
+.buttons{
+  display:flex;
+  justify-content:space-around;
+  margin-top:10px;
+}
+button{
+  border:none;
+  padding:8px 20px;
+  border-radius:6px;
+  font-size:1rem;
+  cursor:pointer;
+  color:#fff;
+}
+.yes{
+  background:#28a745;
+}
+.no{
+  background:#dc3545;
+}
+#confetti-canvas{
+  position:fixed;
+  inset:0;
+  z-index:3;
+  pointer-events:none;
+}
